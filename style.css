@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 1px solid #eb5b34;
+}
+
+body {
+  display: flex;
+  /* center horizontally  */
+  justify-content: center;
+  /* center vertically  */
+  align-items: center;
+  /* set body height and width to 100% of viewport */
+  height: 100vh;
+  background-image: linear-gradient(to right, #ebb434, #eb5b34);
+
+}
+
+input {
+  /* style borders of input box */
+  border-bottom: 1px solid #eb5b34;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  /* background color of input box  */
+  background-color: #ebb434;
+  padding: 0.5em;
+}
+
+
+.search-container .suggestions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+ul {
+  /* set position to keep ul list from shifting position of input during search  */
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  /* width set to match input width  */
+  width: 183px;
+  /* set max height for results box  */
+  max-height: 10rem;
+  /* enable scroll if results do not fit in results box  */
+  overflow-y: auto;
+}
+
+
+ul li {
+  list-style-type: none;
+  background-color: #ebb434;
+  padding: 0.5rem;
+}
+
+ul li:hover {
+  background-color: #eb5b34;
+}
